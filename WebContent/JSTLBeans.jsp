@@ -15,10 +15,10 @@
 
 <!-- Llamo al método del bean -->
 ${user.getFirstName()}
-</br>
+<br/>
 <!-- Puedo usar directamente el atributo del bean -->
 ${user.firstName}
-</br>
+<br/>
 <!-- Puedo usar lo JSTL -->
 <c:out value="${user.firstName}"></c:out>
 
