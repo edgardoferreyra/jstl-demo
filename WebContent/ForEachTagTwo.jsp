@@ -6,15 +6,20 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>forEach Tag Two</title>
 </head>
 <body>
+<%
+String[] names = new String[3];
+names[0] = "Edgardo";
+names[1] = "Fabrizio";
+names[2] = "Noelia";
+%>
 
-<!-- if tag -->
-<c:if test="${param.name == 'edgardo' }">
-	Hello Edgardo
-</c:if>
-Hello User
+<c:forEach items="<%=names%>" var="name">
+${name}
+<br/>
+</c:forEach>
 
 </body>
 </html>
