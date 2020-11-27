@@ -20,5 +20,10 @@ ${user.firstName}
 <!-- Puedo usar lo JSTL -->
 <c:out value="${user.firstName}"></c:out>
 
+
+<c:if test="${param.name == 'edgardo' }">
+Hello Edgardo
+</c:if>
+Hello User
 </body>
 </html>
