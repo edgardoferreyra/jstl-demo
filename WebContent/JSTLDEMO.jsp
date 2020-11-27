@@ -9,10 +9,16 @@
 <title>JSTL Demo</title>
 </head>
 <body>
-<c:set var="name" value="Edgardo"></c:set>
-<c:out value=${name}></c:out>
+
+<jsp:useBean id="user" class="com.edgardoferreyra.beans.User" scope="page"></jsp:useBean>
 
 
+<!-- Llamo al método del bean -->
+${user.getFirstName()}
+<!-- Puedo usar directamente el atributo del bean -->
+${user.firstName}
+<!-- Puedo usar lo JSTL -->
+<c:out value="${user.firstName}"></c:out>
 
 </body>
 </html>
