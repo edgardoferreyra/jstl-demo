@@ -15,37 +15,13 @@
 
 <!-- Llamo al método del bean -->
 ${user.getFirstName()}
+</br>
 <!-- Puedo usar directamente el atributo del bean -->
 ${user.firstName}
+</br>
 <!-- Puedo usar lo JSTL -->
 <c:out value="${user.firstName}"></c:out>
 
-<!-- if tag -->
-<c:if test="${param.name == 'edgardo' }">
-Hello Edgardo
-</c:if>
-Hello User
-
-</br>
-</br>
-
-<!-- Choose and when tags -->
-
-<c:choose>
-	<c:when test="${param.lang == 'Java' }">
-		Learnig Java.
-	</c:when>
-		<c:when test="${param.lang == 'PHP' }">
-		Learnig PHP.
-	<c:otherwise>
-		Learnig something good.
-	</c:otherwise>
-</c:choose>
-
-</br>
-</br>
-
-<!--  -->
 
 </body>
 </html>
