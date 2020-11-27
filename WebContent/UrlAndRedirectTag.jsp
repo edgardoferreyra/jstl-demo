@@ -16,7 +16,7 @@ Muestra la dirección relativa.
 <br/>
 <br/>
 
-Muestra el link a la página web.
+Link a la página web.
 <br/>
 <a href="<c:url value="/AnotherPage.jsp"></c:url>">Another Page</a>
 <br/>
